@@ -22,12 +22,13 @@
 
       #lb-btn {
         position: absolute;
+        user-select: none;
         top: 24px;
         left: 50%;
         transform: translateX(-50%);
         background-color: black;
         color: white;
-         border: 1px solid white;
+        border: 1px solid white;
         padding: 8px 16px;
         cursor: pointer;
         font-family: inherit;
@@ -69,10 +70,16 @@
         background-color: white;
         color: black;
       }
+      #click-ctr {
+        text-align: center;
+        user-select: none;
+        pointer-events: none;
+      }
     </style>
   </head>
   <body>
     <button id="lb-btn">Leaderboard</button>
     <button id="click-btn"><i class="fa-solid fa-arrow-pointer fa-2xl"></i></button>
+    <h1 id="click-ctr">Loading...</h1>
   </body>
 </html>
