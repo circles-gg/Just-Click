@@ -6,48 +6,67 @@
     <title>Just Click</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-      body {
-        background-color: black;
-        color: white;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #lb-btn {
-        background-color: black;
-        border: solid 1px white;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-      }
-      #lb-btn:hover {
-        transform: scale(1.1);
-      }
-      #lb-btn:active {
-        transform: scale(0.9);
-        background-color: grey;
-      }
-      #click-btn {
-          width: 160px;
-          height: 160px;
-          background-color: black;
-          border: 1px solid white;
-          color: white;
-          cursor: pointer;
-          transition: transform 0.1s ease;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 24px;
-        }
-      #click-btn:hover {
-        transform: scale(1.1);
-      }
-      #click-btn:active {
-        transform: scale(0.9);
-        background-color: grey;
-      }
+body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #lb-btn {
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+    }
+
+    #lb-btn:hover {
+      transform: translateX(-50%) scale(1.1);
+      background-color: white;
+      color: black;
+    }
+
+    #lb-btn:active {
+      transform: translateX(-50%) scale(0.9);
+    }
+
+    #click-btn {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background-color: black;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.05s ease, background-color 0.05s ease, color 0.05s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    #click-btn:hover {
+      transform: scale(1.1);
+    }
+
+    #click-btn:active {
+      transform: scale(0.9);
+      background-color: white;
+      color: black;
+    }
     </style>
   </head>
   <body>
