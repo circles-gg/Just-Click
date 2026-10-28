@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Click</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #lb-btn {
+        background-color: black;
+        border: solid 1px white;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      #lb-btn:hover {
+        transform: scale(1.1);
+      }
+      #lb-btn:active {
+        transform: scale(0.9);
+        background-color: grey;
+      }
+      #click-btn {
+          width: 160px;
+          height: 160px;
+          background-color: black;
+          border: 1px solid white;
+          color: white;
+          cursor: pointer;
+          transition: transform 0.1s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+        }
+      #click-btn:hover {
+        transform: scale(1.1);
+      }
+      #click-btn:active {
+        transform: scale(0.9);
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="lb-btn">Leaderboard</button>
+    <button id="click-btn"><i class="fa-solid fa-arrow-pointer"></i></button>
+  </body>
+</html>
